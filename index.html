@@ -15,6 +15,8 @@
   box-sizing: border-box;
 }
 
+
+
 h1 {
   font-family: 'Arima Madurai', cursive;
   color: black;
@@ -25,6 +27,17 @@ h1 {
   z-index: 3;
 }
 
+.bq {
+  font-family: 'Trebuchet MS', cursive;
+  color: green; 
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 3;
+}
+
+
 .container {
   z-index: 1;
   position: relative;
@@ -32,12 +45,12 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 35rem;
+  min-height: 10rem;
   background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url("https://images.unsplash.com/photo-1446824505046-e43605ffb17f");
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .bird {
@@ -265,6 +278,12 @@ h1 {
   }
 }
 
+.main {
+  width:640px;
+  margin: auto;
+}
+
+
     </style>
 <script>
   window.console = window.console || function(t) {};
@@ -275,41 +294,88 @@ h1 {
   }
 </script>
 </head>
-<body translate="no">
-<div class="container">
-<h1>Greeley Biology Club</h1>
-<div class="bird-container bird-container--one">
-<div class="bird bird--one"></div>
-</div>
-<div class="bird-container bird-container--two">
-<div class="bird bird--two"></div>
-</div>
-<div class="bird-container bird-container--three">
-<div class="bird bird--three"></div>
-</div>
-<div class="bird-container bird-container--four">
-<div class="bird bird--four"></div>
-</div>
-</div>
-<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
-</body>
-</html>
+<body translate="no" bgcolor=lightyellow>
+
+
+    <div class="container">
+      <h1>Greeley Biology Club</h1>
+      <div class="bird-container bird-container--one">
+	<div class="bird bird--one"></div>
+      </div>
+      <div class="bird-container bird-container--two">
+	<div class="bird bird--two"></div>
+      </div>
+      <div class="bird-container bird-container--three">
+	<div class="bird bird--three"></div>
+      </div>
+      <div class="bird-container bird-container--four">
+	<div class="bird bird--four"></div>
+      </div>
+    </div>
+    <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+
+    <div class="main">
+      <center>
+	
+	<blockquote>
+	  <div  class="bq">
+	    Greeley Biology Club is comprised of a group of students who are interested in Biology.
+	    Our club mission is to provide opportunities to explore topics related to biology some
+	    of which could be outside our regular curriculum in fun and interesting ways.
+	    <p>
+	      We strive to support science-loving students throughout Greeley
+	      in a fun and casual environment for all. We
+	      invite those who would like to share info and those who seek info regarding
+	      their science research efforts. 
+	  </div>
+	</blockquote>
+
+      </center>
+      
+	<br>
+	<h2>Activities planned include...</h2>
+	<ul>
+	  <li>Share and create awareness among members regarding opportunities for research,
+	      summer options in biology related topics</li>
+	  <li>Encourage participation in USA Biology Olympiad; share resources and preparation tips</li>
+	  <li>Invite and host guest speakers</li>
+	  <li>Volunteer / raise funds for special events</li>
+	  <li> ...and more!</li>
+	</ul>
+	
+
+	<form action="https://formspree.io/greeleybiologyclub@gmail.com" method="POST">
+	  <table>
+	    <tr>
+	      <td> </td>
+	      <td> <h2> Join us!</h2> </td>
+	    </tr>
+	    <tr>
+	      <td align="right"> Name: </td>
+	      <td> <input type="text" name="name">  </td>
+	    </tr>
+	    <tr>
+	      <td align="right"> Email: </td>
+	      <td> <input type="email" name="_replyto"> </td>
+	    </tr>
+	    <tr>
+	      <td align="right" valign="top"> Message (optional):</td>
+	      <td> <textarea name="message" rows=4 cols=50> </textarea> </td>
+	    </tr>
+	    <tr>
+	      <td align="right"> </td>
+	      <td><input type="submit" value="Send"> </td>
+	    </tr>
+	  </table>
+	</form>
+	
 
 
 
-<H1>Signup Form</H1>
+  </div>
 
 
 
-<form action="https://formspree.io/greeleybiologyclub@gmail.com" method="POST">
-    Name: <input type="text" name="name"> <br/>
-    Email: <input type="email" name="_replyto"> <br/>
-    Message (optional): <input type="textarea" name="message" rows=6 cols=40> <br/>
-    <input type="submit" value="Send">
-</form>
-
-<BR> 
-<HR>
 </BODY>
 </HTML>
  
